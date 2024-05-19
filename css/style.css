@@ -905,17 +905,6 @@ video {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping {
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1587,10 +1576,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:animate-none:hover {
-  animation: none;
-}
-
 .hover\:bg-gray-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -1663,10 +1648,6 @@ video {
   --tw-ring-color: rgb(199 210 254 / var(--tw-ring-opacity));
 }
 
-.active\:animate-none:active {
-  animation: none;
-}
-
 .active\:bg-gray-900\/20:active {
   background-color: rgb(17 24 39 / 0.2);
 }
@@ -1707,10 +1688,6 @@ video {
 
 .group[open] .group-open\:animate-fadeIn {
   animation: fadeIn 0.2s ease-in-out forwards;
-}
-
-.group[open] .group-open\:animate-none {
-  animation: none;
 }
 
 .group.active .group-\[\.active\]\:-translate-y-\[11px\] {
