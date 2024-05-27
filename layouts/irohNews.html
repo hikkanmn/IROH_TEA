@@ -72,56 +72,32 @@
     </header>
 
     <main class="w-full">
-        <section class="carousel bg-gray-500 relative container mx-auto" style="max-width:1600px;">
-            <div class="carousel-inner relative overflow-hidden w-full">
-                <!--Slide 1-->
-                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-                <div class="carousel-item absolute opacity-0" style="height:100vh;">
-                    <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-top " style="background-image: url('/imgs/news_sale.png')">
-
-                    </div>
-                </div>
-              
-                <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-          
-                <!--Slide 2-->
-                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0" style="height:100vh;">
-                    <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-top" style="background-image: url('/imgs/news_matcha.png')">
-          
-                    </div>
-                </div>
-                <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-          
-                <!--Slide 3-->
-                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0" style="height:100vh;">
-                    <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-top" style="background-image: url('/imgs/news_tea.png')">
-          
-                    </div>
-                </div>
-                <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-opacity-20 bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-          
-                <!-- slide indicators -->
-                <ol class="carousel-indicators">
-                    <li class="inline-block mr-3">
-                        <label for="carousel-1" class="z-0 carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
-                    </li>
-                    <li class="inline-block mr-3">
-                        <label for="carousel-2" class="z-0 carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
-                    </li>
-                    <li class="inline-block mr-3">
-                        <label for="carousel-3" class="z-0 carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
-                    </li>
-                </ol>
+        <section class="relative">
+            <!-- первый слайд -->
+            <div class="sticky top-0 h-screen flex flex-col items-center text-center justify-center bg-mySale bg-no-repeat bg-cover bg-top text-myBrown uppercase">
+                <h2 class="text-4xl font-bold">Всем клиентам чай по тарифу 1+1=3*</h2>
+                <p class="mt-2 mb-20">*Акция действует при заказе двух и более чайников одного вида чая</p>
+                <a href="https://t.me/irohteaa/19">
+                    <button class="text-white bg-myPurple border-0 py-2 px-6 focus:outline-none hover:bg-purple-700 rounded text-lg animate-bounce">Подробнее об акции</button>
+                </a>
+            </div>
+            <!-- второй слайд -->
+            <div class="sticky top-0 h-screen flex flex-col items-center text-center justify-center bg-myMatcha bg-no-repeat bg-cover bg-top text-white uppercase">
+                <h2 class="text-4xl font-bold">Вместе с мастерами учим заваривать матчу*</h2>
+                <p class="mt-2 mb-20">*Мастер-классы проводятся по будням после 18:00</p>
+                <a href="https://t.me/irohteaa/19">
+                    <button class="text-white bg-myPurple border-0 py-2 px-6 focus:outline-none hover:bg-purple-700 rounded text-lg animate-bounce">Подробнее об акции</button>
+                </a>
+            </div>
+            <!-- третий слайд -->
+            <div class="sticky top-0 h-screen flex flex-col items-center text-center justify-center bg-myTeaceremony bg-no-repeat bg-cover bg-top text-white uppercase">
+                <h2 class="text-4xl font-bold">Мы проводим чайные церемонии*</h2>
+                <p class="mt-2 mb-20">*Чайные церемонии проводятся в любой день после 14:00</p>
+                <a href="https://t.me/irohteaa/19">
+                    <button class="text-white bg-myPurple border-0 py-2 px-6 focus:outline-none hover:bg-purple-700 rounded text-lg animate-bounce">Подробнее об акции</button>
+                </a>
             </div>
         </section>
-        <a href="https://t.me/irohteaa">
-            <button class="text-white bg-myPurple border-0 py-2 px-6 focus:outline-none hover:bg-purple-700 rounded text-lg animate-bounce">Связаться с нами</button>
-        </a>
     </main>
 
     <!-- подвал сайта -->

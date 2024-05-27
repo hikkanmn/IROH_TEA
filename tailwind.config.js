@@ -32,7 +32,10 @@ module.exports = {
         'mainFirstpage': "url('/imgs/main_1st_page.jpg')",
         'mainSecondpage': "url('/imgs/main_2nd_page.jpg')",
         'reviewSecondpage': "url('/imgs/review_2nd_page.jpg')",
-        'logoWhite': "url('/imgs/logo_white.svg')"
+        'logoWhite': "url('/imgs/logo_white.svg')",
+        'mySale': "url('/imgs/news_sale.png')",
+        'myMatcha': "url('/imgs/news_matcha.png')",
+        'myTeaceremony': "url('/imgs/news_tea.png')"
       },
     },
   },
