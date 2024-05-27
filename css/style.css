@@ -619,10 +619,6 @@ video {
   z-index: 30;
 }
 
-.-m-4 {
-  margin: -1rem;
-}
-
 .m-auto {
   margin: auto;
 }
@@ -691,10 +687,6 @@ video {
   margin-right: 0.75rem;
 }
 
-.mr-96 {
-  margin-right: 24rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -721,10 +713,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .mt-7 {
@@ -1130,30 +1118,20 @@ video {
   background-image: url('/imgs/review_2nd_page.jpg');
 }
 
+.from-gray-300 {
+  --tw-gradient-from: #d1d5db var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(209 213 219 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-menuColor1 {
   --tw-gradient-from: #13333F var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(19 51 63 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-myBrown {
-  --tw-gradient-from: #595451 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(89 84 81 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-white {
-  --tw-gradient-from: #fff var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .to-menuColor2 {
   --tw-gradient-to: #09191F var(--tw-gradient-to-position);
-}
-
-.to-white {
-  --tw-gradient-to: #fff var(--tw-gradient-to-position);
 }
 
 .to-myDarkred {
@@ -1260,10 +1238,6 @@ video {
 
 .pb-20 {
   padding-bottom: 5rem;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
 }
 
 .pl-4 {
@@ -1391,6 +1365,16 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -1444,16 +1428,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-200 {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
-}
-
-.text-gray-100 {
-  --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1638,9 +1612,9 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.hover\:text-myBrown:hover {
+.hover\:text-myGreen:hover {
   --tw-text-opacity: 1;
-  color: rgb(89 84 81 / var(--tw-text-opacity));
+  color: rgb(23 60 76 / var(--tw-text-opacity));
 }
 
 .hover\:text-myPurple:hover {
@@ -1781,10 +1755,6 @@ video {
 }
 
 @media (max-width: 1024px) {
-  .md\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
   .md\:ml-10 {
     margin-left: 2.5rem;
   }
@@ -1823,10 +1793,6 @@ video {
 
   .md\:items-center {
     align-items: center;
-  }
-
-  .md\:p-10 {
-    padding: 2.5rem;
   }
 
   .md\:px-16 {
@@ -1880,6 +1846,10 @@ video {
     display: none;
   }
 
+  .sm\:h-16 {
+    height: 4rem;
+  }
+
   .sm\:w-1\/3 {
     width: 33.333333%;
   }
@@ -1888,12 +1858,20 @@ video {
     width: 2.5rem;
   }
 
+  .sm\:w-12 {
+    width: 3rem;
+  }
+
   .sm\:w-2\/3 {
     width: 66.666667%;
   }
 
   .sm\:w-8 {
     width: 2rem;
+  }
+
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:grid-cols-1 {
@@ -1926,10 +1904,6 @@ video {
 
   .sm\:p-3 {
     padding: 0.75rem;
-  }
-
-  .sm\:p-5 {
-    padding: 1.25rem;
   }
 
   .sm\:px-1 {
@@ -1991,11 +1965,65 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:leading-3 {
+    line-height: .75rem;
+  }
+
+  .sm\:leading-5 {
+    line-height: 1.25rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .xs\:absolute {
+    position: absolute;
+  }
+
+  .xs\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .xs\:w-full {
+    width: 100%;
+  }
+
   .xs\:flex-col {
     flex-direction: column;
+  }
+
+  .xs\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .xs\:pt-12 {
+    padding-top: 3rem;
+  }
+
+  .xs\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
+  .xs\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .xs\:pt-44 {
+    padding-top: 11rem;
+  }
+
+  .xs\:pt-52 {
+    padding-top: 13rem;
+  }
+
+  .xs\:pt-60 {
+    padding-top: 15rem;
   }
 
   .xs\:text-center {
@@ -2004,5 +2032,10 @@ video {
 
   .xs\:text-\[8px\] {
     font-size: 8px;
+  }
+
+  .xs\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
