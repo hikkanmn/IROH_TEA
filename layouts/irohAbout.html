@@ -222,14 +222,14 @@
                         <h2 class="text-gray-900 text-lg sm:text-base mb-1 font-medium title-font">Мы здесь</h2>
                         <p class="leading-relaxed text-gray-600 sm:text-sm">Россия, г. Тольятти, ул. Баныкина, д. 10A</p>
                         <p class="leading-relaxed mb-5 text-gray-600 sm:text-sm">iroh_tea@ask.com</p>
-                        <form id="#feedbackForm" action="">
+                        <form action="#">
                             <div class="relative mb-4">
                                 <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-                                <input required type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                <input required type="email" id="email" name="email" autocomplete="off" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                             </div>
                             <div class="relative mb-4">
                                 <label for="message" class="leading-7 text-sm text-gray-600">Вопрос/Отзыв</label>
-                                <textarea id="message" name="message" class="h-32 sm:h-16 w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                                <textarea id="message" name="message" autocomplete="off" class="h-32 sm:h-16 w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                             </div>
                             <input type="submit" class="text-white bg-myPurple border-0 py-2 px-6 focus:outline-none hover:bg-purple-700 rounded text-lg sm:text-base animate-bounce"></input>
                             <p class="text-xs text-gray-500 mt-3">Вы можете написать отзыв или что-либо уточнить. Всегда рады ответить!</p>
@@ -263,5 +263,7 @@
         </div>
     </footer>
     <script src="/js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
