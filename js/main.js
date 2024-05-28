@@ -61,19 +61,39 @@ function sendEmail() {
   );
 }
 
-// function checkEmail() {
-//   const emsilRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+function checkInputs() {
+  if (mess.value == "") {
+    mess.classList.add('text-red')
+  }
 
-//   if (!email.value.match(emailRegex)) {
-//     email.classList.add('text-red')
-//   }
-//   else {
-//     email.classList.remove('text-red')
-//   }
-// }
+  if (email.value != "") {
+    checkEmail()
+  }
+
+  mess.addEventListener('keyup', () => {
+    if(mess.value != "") {
+      mess.classList.remove('text-red')
+    }
+    else {
+      mess.classList.add('text-red')
+    }
+  })
+}
+
+function checkEmail() {
+  const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+
+  if (!email.value.match(emailRegex)) {
+    email.classList.add('text-red')
+  }
+  else {
+    email.classList.remove('text-red')
+  }
+}
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
-  // checkEmail()
-  sendEmail()
+  checkInputs()
+
+  // sendEmail()
 })
