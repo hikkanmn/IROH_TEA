@@ -62,38 +62,44 @@ function sendEmail() {
 }
 
 function checkInputs() {
-  if (mess.value == "") {
-    mess.classList.add('text-red')
+  if (mess.value == '') {
+    mess.classList.add('errorInput')
   }
 
-  if (email.value != "") {
+  if (email.value != '') {
     checkEmail()
   }
 
+  email.addEventListener('keyup', () => {
+    checkEmail()
+  })
+
   mess.addEventListener('keyup', () => {
-    if(mess.value != "") {
-      mess.classList.remove('text-red')
+    if(mess.value != '') {
+      mess.classList.remove('errorInput')
     }
     else {
-      mess.classList.add('text-red')
+      mess.classList.add('errorInput')
     }
   })
 }
 
 function checkEmail() {
-  const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+  const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/ //for check regEx 
 
   if (!email.value.match(emailRegex)) {
-    email.classList.add('text-red')
+    email.classList.add('errorInput')
   }
   else {
-    email.classList.remove('text-red')
+    email.classList.remove('errorInput')
   }
 }
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault()
+  e.preventDefault()  
   checkInputs()
-
-  // sendEmail()
+  if (!email.classList.contains('errorInput') && !mess.classList.contains('errorInput')) {
+    // alert('!')
+    sendEmail()
+  }
 })
