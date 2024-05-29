@@ -1568,6 +1568,11 @@ video {
   background-color: rgb(17 24 39 / 0.2);
 }
 
+.active\:bg-white:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .active\:text-gray-400:active {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
