@@ -6,3 +6,7 @@
 .errorInput {
   border-color: red;
 }
+
+* {
+  @apply transition-colors duration-300 ease-in-out
+}

@@ -2,7 +2,6 @@ function toggleMenu() {
     const burgerMenu = document.querySelector('#burgerMenu')
     const mobileMenu = document.querySelector('#mobileMenu')
     const mainBody = document.querySelector('body')
-    const mainCarousel = document.querySelector('mainCarousel')
 
     burgerMenu.addEventListener('click', () => {
         burgerMenu.classList.toggle('active')

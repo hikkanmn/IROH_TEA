@@ -16,46 +16,62 @@
         <a href="/index.html">
             <img class="max-w-20 md:w-16 sm:w-12" src="/imgs/logo_white.svg" alt="Ошибка загрузки изображения. Попробуйте обносить страницу.">
         </a>
-        <!-- навигация -->
-        <nav class="sm:hidden">
-            <ul class="flex items-center space-x-12">
-                <li>
-                    <a href="/layouts/irohAbout.html" class="text-lg font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform hover:after:scale-100 hover:text-teal-700 ease-in-out duration-300">
-                        О нас
-                    </a>
-                </li>
-                <li>
-                    <a href="/layouts/irohMenu.html" class="text-lg font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform hover:after:scale-100 hover:text-teal-700 ease-in-out duration-300">
-                        Продукция
-                    </a>
-                </li>
-                <li>
-                    <a href="/layouts/irohNews.html" class="text-lg font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform hover:after:scale-100 hover:text-teal-700 ease-in-out duration-300">
-                        Новости и акции
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="flex justify-center items-center space-x-12 sm:space-x-0">
+            <!-- навигация -->
+            <nav class="sm:hidden">
+                <ul class="flex items-center space-x-12">
+                    <li>
+                        <a href="/layouts/irohAbout.html" class="text-lg font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform duration-500 ease-in-out hover:after:scale-100 hover:text-myDarkgreen">
+                            О нас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/layouts/irohMenu.html" class="text-lg font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform duration-500 ease-in-out hover:after:scale-100 hover:text-myDarkgreen">
+                            Продукция
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/layouts/irohNews.html" class="text-lg font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform duration-500 ease-in-out hover:after:scale-100 hover:text-myDarkgreen">
+                            Новости и акции
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- кнопка темной темы -->
+            <button onclick="(() => document.body.classList.toggle('dark'))()"
+                class="h-12 w-12 rounded-lg p-2 hover:bg-white">
+                <svg class="fill-white hover:fill-gray-700 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+                <svg class="fill-white hover:fill-gray-700 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        fill-rule="evenodd" clip-rule="evenodd">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        
         <!-- мобильное меню -->
         <nav id="mobileMenu" class="fixed hidden left-0 top-0 right-0 bottom-0 items-center justify-center bg-gradient-to-r from-menuColor1 to-menuColor2 backdrop-blur  h-screen">
             <ul class="flex flex-col items-center space-y-12">
                 <li>
-                    <a href="/index.html" class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform hover:after:scale-100 hover:text-teal-700 ease-in-out duration-300">
+                    <a href="/index.html" class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 hover:after:scale-100 hover:text-teal-700 ">
                         Главная
                     </a>
                 </li>
                 <li>
-                    <a href="/layouts/irohAbout.html" class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform hover:after:scale-100 hover:text-teal-700 ease-in-out duration-300">
+                    <a href="/layouts/irohAbout.html" class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 hover:after:scale-100 hover:text-teal-700">
                         О нас
                     </a>
                 </li>
                 <li>
-                    <a href="/layouts/irohMenu.html" class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform hover:after:scale-100 hover:text-teal-700 ease-in-out duration-300">
+                    <a href="/layouts/irohMenu.html" class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 hover:after:scale-100 hover:text-teal-700 ">
                         Продукция
                     </a>
                 </li>
                 <li>
-                    <a href="/layouts/irohNews.html" class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform hover:after:scale-100 hover:text-teal-700 ease-in-out duration-300">
+                    <a href="/layouts/irohNews.html" class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 hover:after:scale-100 hover:text-teal-700">
                         Новости и акции
                     </a>
                 </li>
@@ -63,27 +79,29 @@
         </nav>
         <!-- бургер для мобильного меню  -->
         <button class="group relative h-5 w-[30px] hidden sm:block" id="burgerMenu">
-            <span class="absolute left-0 bg-white h-[1px] w-full top-0 group-[.active]:translate-y-2 group-[.active]:rotate-45 transition-transform">
+            <span class="absolute left-0 bg-white h-[1px] w-full top-0 group-[.active]:translate-y-2 group-[.active]:rotate-45">
             </span>
-            <span class="absolute left-0 bg-white h-[1px] w-full top-1/2 group-[.active]:opacity-0 transition-opacity">
+            <span class="absolute left-0 bg-white h-[1px] w-full top-1/2 group-[.active]:opacity-0">
             </span>
-            <span class="absolute left-0 bg-white h-[1px] w-full bottom-0 group-[.active]:-translate-y-[11px] group-[.active]:-rotate-45 transition-transform">
+            <span class="absolute left-0 bg-white h-[1px] w-full bottom-0 group-[.active]:-translate-y-[11px] group-[.active]:-rotate-45">
             </span>
         </button>
     </header>
 
-    <main class="w-full mx-auto px-10 sm:px-1 pt-28 pb-20 bg-gradient-to-b from-gray-300 to-myDarkred">
+    <main class="w-full mx-auto px-10 sm:px-1 pt-28 pb-20 bg-gradient-to-b from-gray-300 to-myDarkred dark:from-myDarkredfrom dark:to-myDarkred">
         <section>
             <div class="flex flex-wrap flex-col justify-center px-36 lg:px-20 md:px-16 sm:px-5 mb-10 text-myDarkred text-center">
-                <h1 class="text-4xl md:text-3xl sm:text-2xl font-semibold">Наш ассортимент</h1>
-                <p class="mt-2 text-lg md:text-base sm:text-sm font-extralight"><i>Все виды чая мы закупаем отдельно у проверенных поставщиков, в связи с тем, что качество продукции и вкус для нас превыше всего. С любовью, ваши Айро!</i></p>
+                <h1 class="text-black dark:text-white text-4xl md:text-3xl sm:text-2xl font-semibold">Наш ассортимент</h1>
+                <p class="mt-2 text-lg md:text-base sm:text-sm font-extralight">
+                    <i class="text-gray-900 dark:text-gray-300">Все виды чая мы закупаем отдельно у проверенных поставщиков, в связи с тем, что качество продукции и вкус для нас превыше всего. С любовью, ваши Айро!</i>
+                </p>
             </div>
             <!-- component -->
             <div class="container mx-auto flex items-center justify-center">
                 <div class="grid grid-cols-3 grid-rows-2 gap-12 md:grid-cols-2 md:grid-rows-3 lg:gap-4 sm:grid-cols-1 sm:grid-rows-6">
                     <!-- Blog Entry 1 -->
                     <div class="overflow-hidden max-w-sm mx-auto relative shadow-md rounded-lg cursor-pointer">
-                        <img src="/imgs/masala_tea.png" class="hover:scale-110 transition-transform w-full h-auto rounded-lg" alt="Ошибка загрузки изображения. Попробуйте обносить страницу.">
+                        <img src="/imgs/masala_tea.png" class="dark:opacity-70 dark:contrast-125 hover:scale-110 transition-transform ease-in-out w-full h-auto rounded-lg" alt="Ошибка загрузки изображения. Попробуйте обносить страницу.">
                         <div class="absolute bottom-0 left-0 right-0 h-40 bg-black bg-opacity-50 backdrop-blur text-white p-4 rounded-b-lg">
                             <h1 class="text-2xl font-bold">Масала</h1>
                             <p class="mt-2 lg:text-sm">Известный пряный чай родом из Индии. Пикантное сочетание горячего молока и индийских специй активизирует рецепторы вкуса, даря им настоящее наслаждение.</p>
@@ -92,7 +110,7 @@
     
                     <!-- Blog Entry 2 -->
                     <div class="overflow-hidden max-w-sm mx-auto relative shadow-md rounded-lg cursor-pointer">
-                        <img src="/imgs/oolong_tea.png" class="hover:scale-110 transition-transform w-full h-auto rounded-lg" alt="Ошибка загрузки изображения. Попробуйте обносить страницу.">
+                        <img src="/imgs/oolong_tea.png" class="dark:opacity-70 dark:contrast-125 hover:scale-110 transition-transform ease-in-out w-full h-auto rounded-lg" alt="Ошибка загрузки изображения. Попробуйте обносить страницу.">
                         <div class="absolute bottom-0 left-0 right-0 h-40 bg-black bg-opacity-50 backdrop-blur text-white p-4 rounded-b-lg">
                             <h1 class="text-2xl font-bold">Улун</h1>
                             <p class="mt-2 lg:text-sm">Он помогает сбросить лишний вес, нормализовать кровяное давление, подавляет рост раковых клеток, помогает при нервных расстройствах и депрессии.</p>
@@ -101,7 +119,7 @@
     
                     <!-- Blog Entry 3 -->
                     <div class="overflow-hidden max-w-sm mx-auto relative shadow-md rounded-lg cursor-pointer">
-                        <img src="/imgs/matcha_tea.png" class="hover:scale-110 transition-transform w-full h-auto rounded-lg" alt="Ошибка загрузки изображения. Попробуйте обносить страницу.">
+                        <img src="/imgs/matcha_tea.png" class="dark:opacity-70 dark:contrast-125 hover:scale-110 transition-transform ease-in-out w-full h-auto rounded-lg" alt="Ошибка загрузки изображения. Попробуйте обносить страницу.">
                         <div class="absolute bottom-0 left-0 right-0 h-40 bg-black bg-opacity-50 backdrop-blur text-white p-4 rounded-b-lg">
                             <h1 class="text-2xl font-bold">Матча</h1>
                             <p class="mt-2 lg:text-sm">Антиоксиданты в чае матча поддерживают общее состояние здоровья. Обеспечивает значительное количество калия, витамина А и С, железа, белка и кальция.</p>
@@ -110,7 +128,7 @@
     
                     <!-- !-- Blog Entry 4 -->
                     <div class="overflow-hidden max-w-sm mx-auto relative shadow-md rounded-lg cursor-pointer">
-                        <img src="/imgs/black_tea.png" class="hover:scale-110 transition-transform w-full h-auto rounded-lg" alt="Ошибка загрузки изображения. Попробуйте обносить страницу.">
+                        <img src="/imgs/black_tea.png" class="dark:opacity-70 dark:contrast-125 hover:scale-110 transition-transform ease-in-out w-full h-auto rounded-lg" alt="Ошибка загрузки изображения. Попробуйте обносить страницу.">
                         <div class="absolute bottom-0 left-0 right-0 h-40 bg-black bg-opacity-50 backdrop-blur text-white p-4 rounded-b-lg">
                             <h1 class="text-2xl font-bold">Черный чай</h1>
                             <p class="mt-2 lg:text-sm">Самый известный чай в Европе. Его вкус лишён горечи, чай обладает сложным действием, одновременно тонизирующим и успокаивающим.</p>
@@ -119,7 +137,7 @@
     
                     <!-- Blog Entry 5 -->
                     <div class="overflow-hidden max-w-sm mx-auto relative shadow-md rounded-lg cursor-pointer">
-                        <img src="/imgs/green_tea.png" class="hover:scale-110 transition-transform w-full h-auto rounded-lg" alt="Ошибка загрузки изображения. Попробуйте обносить страницу.">
+                        <img src="/imgs/green_tea.png" class="dark:opacity-70 dark:contrast-125 hover:scale-110 transition-transform ease-in-out w-full h-auto rounded-lg" alt="Ошибка загрузки изображения. Попробуйте обносить страницу.">
                         <div class="absolute bottom-0 left-0 right-0 h-40 bg-black bg-opacity-50 backdrop-blur text-white p-4 rounded-b-lg">
                             <h1 class="text-2xl font-bold">Зеленый чай</h1>
                             <p class="mt-2 lg:text-sm">Яркий, мягкий и освежающий вкус без горечи. Легкая сладость, нежные цветочные и травяные нотки. У некоторых сортов есть оттенки орехов, ягод, пряностей во вкусе.</p>
@@ -128,7 +146,7 @@
     
                     <!-- Blog Entry 6 -->
                     <div class="overflow-hidden max-w-sm mx-auto relative shadow-md rounded-lg cursor-pointer">
-                        <img src="/imgs/white_tea.png" class="hover:scale-110 transition-transform w-full h-auto rounded-lg" alt="Ошибка загрузки изображения. Попробуйте обносить страницу.">
+                        <img src="/imgs/white_tea.png" class="dark:opacity-70 dark:contrast-125 hover:scale-110 transition-transform ease-in-out w-full h-auto rounded-lg" alt="Ошибка загрузки изображения. Попробуйте обносить страницу.">
                         <div class="absolute bottom-0 left-0 right-0 h-40 bg-black bg-opacity-50 backdrop-blur text-white p-4 rounded-b-lg">
                             <h1 class="text-2xl font-bold">Белый чай</h1>
                             <p class="mt-2 lg:text-sm">Тончайший и изысканный,с едва заметной сладостью, бархатистый и освежающий. Улучшает работу сердца и сосудов, очищает организм, тонизирует, укрепляет иммунитет.</p>
@@ -171,10 +189,10 @@
     <footer class="bg-myDarkred py-5 sm:px-2">
         <div class="flex justify-between items-center px-10 sm:px-1 xs:flex-col">
             <div class="flex gap-6 sm:gap-3 text-gray-300 font-normal sm:text-sm xs:flex-col xs:text-center">
-                <a href="/index.html" class="mr-2 transition-all duration-300 ease-in-out hover:text-gray-500">Главная</a>
-                <a href="/layouts/irohAbout.html" class="mr-2 transition-all duration-300 ease-in-out hover:text-gray-500">О нас</a>
-                <a href="/layouts/irohMenu.html" class="mr-2 transition-all duration-300 ease-in-out hover:text-gray-500">Продукция</a>
-                <a href="/layouts/irohNews.html" class="mr-2 transition-all duration-300 ease-in-out hover:text-gray-500">Новости и акции</a>
+                <a href="/index.html" class="mr-2 hover:text-gray-500">Главная</a>
+                <a href="/layouts/irohAbout.html" class="mr-2 hover:text-gray-500">О нас</a>
+                <a href="/layouts/irohMenu.html" class="mr-2 hover:text-gray-500">Продукция</a>
+                <a href="/layouts/irohNews.html" class="mr-2 hover:text-gray-500">Новости и акции</a>
             </div>
             <div class="flex space-x-5 py-3">
                 <a href="https://vk.com/hikkan_chh">
