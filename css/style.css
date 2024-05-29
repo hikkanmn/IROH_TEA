@@ -956,6 +956,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1430,6 +1434,30 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
 /* for error in the form */
 
 .errorInput {
@@ -1440,6 +1468,26 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .after\:absolute::after {
@@ -1507,13 +1555,8 @@ video {
   background-color: rgb(126 34 206 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:fill-gray-700:hover {
-  fill: #374151;
+.hover\:fill-gray-400:hover {
+  fill: #9ca3af;
 }
 
 .hover\:text-gray-500:hover {
@@ -1643,6 +1686,11 @@ video {
   display: none;
 }
 
+.dark\:bg-gray-300:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .dark\:bg-myBrown:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(89 84 81 / var(--tw-bg-opacity));
@@ -1663,24 +1711,14 @@ video {
   background-color: rgb(6 18 23 / var(--tw-bg-opacity));
 }
 
-.dark\:dark\:bg-myDarkbgfooterbrown:is(.dark *):is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 27 26 / var(--tw-bg-opacity));
-}
-
 .dark\:bg-myPurpledark:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(74 33 119 / var(--tw-bg-opacity));
 }
 
-.dark\:bg-gray-400:is(.dark *) {
+.dark\:dark\:bg-myDarkbgfooterbrown:is(.dark *):is(.dark *) {
   --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-.dark\:bg-gray-300:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  background-color: rgb(29 27 26 / var(--tw-bg-opacity));
 }
 
 .dark\:bg-mainFirstdark:is(.dark *) {
@@ -1732,14 +1770,14 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.dark\:text-white:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .dark\:text-myPurpledark:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(74 33 119 / var(--tw-text-opacity));
+}
+
+.dark\:text-white:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .dark\:opacity-40:is(.dark *) {
