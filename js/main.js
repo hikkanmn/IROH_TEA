@@ -63,7 +63,7 @@ function sendEmail() {
 /*проверка почты при помощи регулярного выражения*/
 function checkEmail() {
   const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
-  
+
   if (!email.value.match(emailRegex)) {
     email.classList.add("errorInput");
   } else {
