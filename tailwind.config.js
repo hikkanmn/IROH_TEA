@@ -27,10 +27,8 @@ module.exports = {
       colors: {
         transBlack: "#00000570" /*свой полупрозрачный цвет для шапки*/,
         myGreen: "#173C4C" /*свой темно-зеленый*/,
-        menuColor1:
-          "#13333F" /*свой первый цвет для градиента мобильного меню*/,
-        menuColor2:
-          "#09191F" /*свой второй цвет для градиента мобильного меню*/,
+        menuColor1: "#13333F" /*свой первый цвет для градиента мобильного меню*/,
+        menuColor2: "#09191F" /*свой второй цвет для градиента мобильного меню*/,
         myPurple: "#9149E1" /*свой оттенок фиолетового*/,
         myBrown: "#595451" /*свой оттенок коричневого*/,
         myDarkRed: "#271427" /*свой оттенок темно-красного*/,
@@ -51,9 +49,12 @@ module.exports = {
           "url('/imgs/main_2nd_page.jpg')" /*перовое фото страницы о нас*/,
         reviewSecondPage:
           "url('/imgs/review_2nd_page.jpg')" /*фото для заднего плана первых отзывов*/,
-        logoWhite: "url('/imgs/logo_white.svg')" /*белое лого для шапки*/,
-        mySale: "url('/imgs/news_sale.png')" /*фото для акции скидки*/,
-        myMatcha: "url('/imgs/news_matcha.png')" /*фото для акции с матчей*/,
+        logoWhite: 
+          "url('/imgs/logo_white.svg')" /*белое лого для шапки*/,
+        mySale: 
+          "url('/imgs/news_sale.png')" /*фото для акции скидки*/,
+        myMatcha: 
+          "url('/imgs/news_matcha.png')" /*фото для акции с матчей*/,
         myTeaCeremony:
           "url('/imgs/news_tea.png')" /*фото для новости про чайные церемонии*/,
         myReviewDark:
