@@ -1,570 +1,375 @@
 <!doctype html>
 <html lang="ru" class="light">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Чайная IROH</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon" />
-  </head>
+</head>
 
-  <body class="mx-auto p-0 border-box select-none pointer-events-auto">
+<body class="mx-auto p-0 border-box select-none pointer-events-auto">
     <!-- шапка сайта -->
     <header
-      class="fixed bg-transBlack backdrop-blur text-white w-screen z-10 px-10 sm:px-3 flex justify-between items-center"
-    >
-      <!-- лого -->
-      <a href="/index.html">
-        <img
-          class="max-w-20 md:w-16 sm:w-12"
-          src="/imgs/logo_white.svg"
-          alt="Ошибка загрузки изображения. Попробуйте обносить страницу."
-        />
-      </a>
-      <div class="flex justify-center items-center space-x-12 sm:space-x-0">
-        <!-- навигация -->
-        <nav class="sm:hidden">
-          <ul class="flex items-center space-x-12">
-            <li>
-              <a
-                href="/layouts/irohAbout.html"
-                class="text-lg font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform duration-500 ease-in-out hover:after:scale-100 hover:text-myDarkGreen"
-              >
-                О нас
-              </a>
-            </li>
-            <li>
-              <a
-                href="/layouts/irohMenu.html"
-                class="text-lg font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform duration-500 ease-in-out hover:after:scale-100 hover:text-myDarkGreen"
-              >
-                Продукция
-              </a>
-            </li>
-            <li>
-              <a
-                href="/layouts/irohNews.html"
-                class="text-lg font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform duration-500 ease-in-out hover:after:scale-100 hover:text-myDarkGreen"
-              >
-                Новости и акции
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <!-- кнопка темной темы -->
-        <button
-          onclick="(() => document.body.classList.toggle('dark'))()"
-          class="h-12 w-12 rounded-lg p-2 active:bg-white"
-        >
-          <svg
-            class="fill-white hover:fill-gray-400 block dark:hidden"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-            ></path>
-          </svg>
-          <svg
-            class="fill-white hover:fill-gray-400 hidden dark:block"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-      </div>
+        class="fixed bg-transBlack backdrop-blur text-white w-screen z-10 px-10 sm:px-3 flex justify-between items-center">
+        <!-- лого -->
+        <a href="/index.html">
+            <img class="max-w-20 md:w-16 sm:w-12" src="/imgs/logo_white.svg"
+                alt="Ошибка загрузки изображения. Попробуйте обносить страницу." />
+        </a>
+        <div class="flex justify-center items-center space-x-12 sm:space-x-0">
+            <!-- навигация -->
+            <nav class="sm:hidden">
+                <ul class="flex items-center space-x-12">
+                    <li>
+                        <a href="/layouts/irohAbout.html"
+                            class="text-lg font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform duration-500 ease-in-out hover:after:scale-100 hover:text-myDarkGreen">
+                            О нас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/layouts/irohMenu.html"
+                            class="text-lg font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform duration-500 ease-in-out hover:after:scale-100 hover:text-myDarkGreen">
+                            Продукция
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/layouts/irohNews.html"
+                            class="text-lg font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 after:transition-transform duration-500 ease-in-out hover:after:scale-100 hover:text-myDarkGreen">
+                            Новости и акции
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- кнопка темной темы -->
+            <button onclick="(() => document.body.classList.toggle('dark'))()"
+                class="h-12 w-12 rounded-lg p-2 active:bg-white">
+                <svg class="fill-white hover:fill-gray-400 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+                <svg class="fill-white hover:fill-gray-400 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
 
-      <!-- мобильное меню -->
-      <nav
-        id="mobileMenu"
-        class="fixed hidden left-0 top-0 right-0 bottom-0 items-center justify-center bg-gradient-to-r from-menuColor1 to-menuColor2 backdrop-blur h-screen"
-      >
-        <ul class="flex flex-col items-center space-y-12">
-          <li>
-            <a
-              href="/index.html"
-              class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 hover:after:scale-100 hover:text-teal-700"
-            >
-              Главная
-            </a>
-          </li>
-          <li>
-            <a
-              href="/layouts/irohAbout.html"
-              class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 hover:after:scale-100 hover:text-teal-700"
-            >
-              О нас
-            </a>
-          </li>
-          <li>
-            <a
-              href="/layouts/irohMenu.html"
-              class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 hover:after:scale-100 hover:text-teal-700"
-            >
-              Продукция
-            </a>
-          </li>
-          <li>
-            <a
-              href="/layouts/irohNews.html"
-              class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 hover:after:scale-100 hover:text-teal-700"
-            >
-              Новости и акции
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- бургер для мобильного меню  -->
-      <button
-        class="group relative h-5 w-[30px] hidden sm:block"
-        id="burgerMenu"
-      >
-        <span
-          class="absolute left-0 bg-white h-[1px] w-full top-0 group-[.active]:translate-y-2 group-[.active]:rotate-45"
-        >
-        </span>
-        <span
-          class="absolute left-0 bg-white h-[1px] w-full top-1/2 group-[.active]:opacity-0"
-        >
-        </span>
-        <span
-          class="absolute left-0 bg-white h-[1px] w-full bottom-0 group-[.active]:-translate-y-[11px] group-[.active]:-rotate-45"
-        >
-        </span>
-      </button>
+        <!-- мобильное меню -->
+        <nav id="mobileMenu"
+            class="fixed hidden left-0 top-0 right-0 bottom-0 items-center justify-center bg-gradient-to-r from-menuColor1 to-menuColor2 backdrop-blur h-screen">
+            <ul class="flex flex-col items-center space-y-12">
+                <li>
+                    <a href="/index.html"
+                        class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 hover:after:scale-100 hover:text-teal-700">
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="/layouts/irohAbout.html"
+                        class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 hover:after:scale-100 hover:text-teal-700">
+                        О нас
+                    </a>
+                </li>
+                <li>
+                    <a href="/layouts/irohMenu.html"
+                        class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 hover:after:scale-100 hover:text-teal-700">
+                        Продукция
+                    </a>
+                </li>
+                <li>
+                    <a href="/layouts/irohNews.html"
+                        class="text-xl font-medium uppercase relative after:absolute after:h-[1px] after:left-0 after:-bottom-1 after:w-full after:bg-white after:scale-0 hover:after:scale-100 hover:text-teal-700">
+                        Новости и акции
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- бургер для мобильного меню  -->
+        <button class="group relative h-5 w-[30px] hidden sm:block" id="burgerMenu">
+            <span
+                class="absolute left-0 bg-white h-[1px] w-full top-0 group-[.active]:translate-y-2 group-[.active]:rotate-45">
+            </span>
+            <span class="absolute left-0 bg-white h-[1px] w-full top-1/2 group-[.active]:opacity-0">
+            </span>
+            <span
+                class="absolute left-0 bg-white h-[1px] w-full bottom-0 group-[.active]:-translate-y-[11px] group-[.active]:-rotate-45">
+            </span>
+        </button>
     </header>
 
     <main class="w-full mx-auto p-0">
-      <!-- 1й блок-титул с фото и надписью -->
-      <section
-        class="container h-screen bg-mainSecondPage dark:bg-mainSecondDark bg-no-repeat bg-cover bg-top pt-40 sm:pt-20 text-white space-y-6"
-      >
-        <h1 class="w-3/5 lg:w-4/5 mx-10 sm:mx-3 font-semibold text-4xl">
-          Наш интерьер символизирует
-          <span class="hover:text-myDarkGreen">спокойствие</span>
-          и вдохновлен
-          <span class="hover:text-myDarkGreen">китайской культурой</span>
-        </h1>
-      </section>
-      <!-- 2й блок с отзывами и фото -->
-      <section
-        class="text-gray-600 bg-reviewSecondPage dark:bg-myReviewDark bg-no-repeat bg-cover bg-top"
-      >
-        <div class="container py-20 mx-auto">
-          <h1
-            class="bg-myBrown text-4xl font-medium title-font text-white mb-20 text-center py-3"
-          >
-            Отзывы первых посетителей
-          </h1>
-          <div
-            class="flex flex-wrap justify-center sm:col-span-1 sm:row-span-2"
-          >
-            <div class="p-4 xs:px-0 md:w-1/2 sm:w-full w-1/3">
-              <div class="h-full bg-white dark:bg-myBrown p-8 rounded">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  class="block w-5 h-5 text-myBrown dark:text-white mb-4 animate-pulse"
-                  viewBox="0 0 975.036 975.036"
-                >
-                  <path
-                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
-                  ></path>
-                </svg>
-                <p class="leading-relaxed mb-6 text-black dark:text-white">
-                  Отличное, чистое, опрятное, недорогое место. Приятная музыка,
-                  удобное расположение столов, быстрое обслуживание. Отдыхала
-                  там два раза с семьёй. Советую попробовать матчу со льдом. Из
-                  минусов можно только отметить, что зал очень компактный, и
-                  бронировать столик нужно очень заранее. Но может быть это даже
-                  не минус, а просто колорит данного заведения, ведь там
-                  проводят чайные церемонии.
-                </p>
-                <a class="inline-flex items-center">
-                  <img
-                    alt="testimonial"
-                    src="/imgs/Victoria_A.jpg"
-                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
-                  />
-                  <span class="flex-grow flex flex-col pl-4">
-                    <span
-                      class="title-font font-medium text-gray-900 dark:text-gray-100"
-                      >Виктория А.</span
-                    >
-                    <span class="text-gray-500 dark:text-gray-300 text-sm"
-                      >Графический дизайнер</span
-                    >
-                  </span>
-                </a>
-              </div>
+        <!-- 1й блок-титул с фото и надписью -->
+        <section
+            class="container h-screen bg-mainSecondPage dark:bg-mainSecondDark bg-no-repeat bg-cover bg-top pt-40 sm:pt-20 text-white space-y-6">
+            <h1 class="w-3/5 lg:w-4/5 mx-10 sm:mx-3 font-semibold text-4xl">
+                Наш интерьер символизирует
+                <span class="hover:text-myDarkGreen">спокойствие</span>
+                и вдохновлен
+                <span class="hover:text-myDarkGreen">китайской культурой</span>
+            </h1>
+        </section>
+        <!-- 2й блок с отзывами и фото -->
+        <section class="text-gray-600 bg-reviewSecondPage dark:bg-myReviewDark bg-no-repeat bg-cover bg-top">
+            <div class="container py-20 mx-auto">
+                <h1 class="bg-myBrown text-4xl font-medium title-font text-white mb-20 text-center py-3">
+                    Отзывы первых посетителей
+                </h1>
+                <div class="flex flex-wrap justify-center sm:col-span-1 sm:row-span-2">
+                    <div class="p-4 xs:px-0 md:w-1/2 sm:w-full w-1/3">
+                        <div class="h-full bg-white dark:bg-myBrown p-8 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="block w-5 h-5 text-myBrown dark:text-white mb-4 animate-pulse"
+                                viewBox="0 0 975.036 975.036">
+                                <path
+                                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                                </path>
+                            </svg>
+                            <p class="leading-relaxed mb-6 text-black dark:text-white">
+                                Отличное, чистое, опрятное, недорогое место. Приятная музыка,
+                                удобное расположение столов, быстрое обслуживание. Отдыхала
+                                там два раза с семьёй. Советую попробовать матчу со льдом. Из
+                                минусов можно только отметить, что зал очень компактный, и
+                                бронировать столик нужно очень заранее. Но может быть это даже
+                                не минус, а просто колорит данного заведения, ведь там
+                                проводят чайные церемонии.
+                            </p>
+                            <a class="inline-flex items-center">
+                                <img alt="testimonial" src="/imgs/Victoria_A.jpg"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900 dark:text-gray-100">Виктория
+                                        А.</span>
+                                    <span class="text-gray-500 dark:text-gray-300 text-sm">Графический дизайнер</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4 xs:px-0 md:w-1/2 sm:w-full w-1/3">
+                        <div class="h-full bg-white dark:bg-myBrown p-8 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="block w-5 h-5 text-myBrown dark:text-white mb-4 animate-pulse"
+                                viewBox="0 0 975.036 975.036">
+                                <path
+                                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                                </path>
+                            </svg>
+                            <p class="leading-relaxed mb-6 text-black dark:text-white">
+                                Данную чайную могу рекомендовать по нескольким причинам:
+                                добрый и приветливый персонал; очень приятно оформленный
+                                интерьер и приятные виды из окна; ну и конечно самое главное —
+                                ассортимент. Выбор напитков порадовал, очень вкусно! В
+                                особенности хочу отметить масала и улун. Спасибо, ребята, Вам
+                                за теплый прием)
+                            </p>
+                            <a class="inline-flex items-center">
+                                <img alt="testimonial" src="/imgs/Alexander_Z.jpg"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900 dark:text-gray-100">Александр
+                                        З.</span>
+                                    <span class="text-gray-500 dark:text-gray-300 text-sm">Метеоролог</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="p-4 xs:px-0 md:w-1/2 sm:w-full w-1/3">
-              <div class="h-full bg-white dark:bg-myBrown p-8 rounded">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  class="block w-5 h-5 text-myBrown dark:text-white mb-4 animate-pulse"
-                  viewBox="0 0 975.036 975.036"
-                >
-                  <path
-                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
-                  ></path>
-                </svg>
-                <p class="leading-relaxed mb-6 text-black dark:text-white">
-                  Данную чайную могу рекомендовать по нескольким причинам:
-                  добрый и приветливый персонал; очень приятно оформленный
-                  интерьер и приятные виды из окна; ну и конечно самое главное —
-                  ассортимент. Выбор напитков порадовал, очень вкусно! В
-                  особенности хочу отметить масала и улун. Спасибо, ребята, Вам
-                  за теплый прием)
-                </p>
-                <a class="inline-flex items-center">
-                  <img
-                    alt="testimonial"
-                    src="/imgs/Alexander_Z.jpg"
-                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
-                  />
-                  <span class="flex-grow flex flex-col pl-4">
-                    <span
-                      class="title-font font-medium text-gray-900 dark:text-gray-100"
-                      >Александр З.</span
-                    >
-                    <span class="text-gray-500 dark:text-gray-300 text-sm"
-                      >Метеоролог</span
-                    >
-                  </span>
-                </a>
-              </div>
+        </section>
+        <!-- 3й блок вопрос-ответ -->
+        <section class="max-w-screen-xl mx-auto py-20 px-5 bg-white dark:bg-myDarkBrownBg">
+            <div class="flex flex-col items-center mt-16 mb-10">
+                <h2 class="font-bold text-4xl sm:2xl mt-5 text-black dark:text-white delay-0">
+                    Самые частые вопросы
+                </h2>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- 3й блок вопрос-ответ -->
-      <section
-        class="max-w-screen-xl mx-auto py-20 px-5 bg-white dark:bg-myDarkBrownBg"
-      >
-        <div class="flex flex-col items-center mt-16 mb-10">
-          <h2
-            class="font-bold text-4xl sm:2xl mt-5 text-black dark:text-white delay-0"
-          >
-            Самые частые вопросы
-          </h2>
-        </div>
-        <div
-          class="grid divide-y divide-neutral-200 max-w-6xl mx-auto mt-8 mb-28"
-        >
-          <div class="py-5">
-            <details class="group">
-              <summary
-                class="flex justify-between items-center font-medium cursor-pointer list-none"
-              >
-                <span class="text-xl text-black dark:text-white delay-0">
-                  Какие самые популярные виды чая у вас?
-                </span>
-                <span
-                  class="transition group-open:rotate-180 text-black dark:text-white"
-                >
-                  <svg
-                    fill="none"
-                    height="24"
-                    shape-rendering="geometricPrecision"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </span>
-              </summary>
-              <p
-                class="text-neutral-600 dark:text-gray-400 delay-0 mt-3 text-base group-open:animate-fadeIn"
-              >
-                У нас самые популярные виды чая - зеленый, черный, улун и
-                масала. Мы также предлагаем различные ароматизированные чаи и
-                коллекции редких и уникальных сортов.
-              </p>
-            </details>
-          </div>
-          <div class="py-5">
-            <details class="group">
-              <summary
-                class="flex justify-between items-center font-medium cursor-pointer list-none"
-              >
-                <span class="text-xl text-black dark:text-white delay-0">
-                  Как часто обновляется ассортимент чая?</span
-                >
-                <span
-                  class="transition group-open:rotate-180 text-black dark:text-white"
-                >
-                  <svg
-                    fill="none"
-                    height="24"
-                    shape-rendering="geometricPrecision"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </span>
-              </summary>
-              <p
-                class="text-neutral-600 dark:text-gray-400 mt-3 text-base group-open:animate-fadeIn"
-              >
-                Мы постоянно следим за новыми трендами и предлагаем своим
-                клиентам самые свежие и качественные сорта чая. Ассортимент
-                регулярно обновляется, так что всегда есть что-то новенькое для
-                попробовать.
-              </p>
-            </details>
-          </div>
-          <div class="py-5">
-            <details class="group">
-              <summary
-                class="flex justify-between items-center font-medium cursor-pointer list-none"
-              >
-                <span class="text-xl text-black dark:text-white delay-0">
-                  Какие виды чая вы рекомендуете для новичков?</span
-                >
-                <span
-                  class="transition group-open:rotate-180 text-black dark:text-white"
-                >
-                  <svg
-                    fill="none"
-                    height="24"
-                    shape-rendering="geometricPrecision"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </span>
-              </summary>
-              <p
-                class="text-neutral-600 dark:text-gray-400 text-base mt-3 group-open:animate-fadeIn"
-              >
-                Для новичков в мире чая мы рекомендуем попробовать классические
-                сорта, такие как зеленый и черный чай. Они имеют мягкий вкус и
-                приятный аромат, идеально подходят для начала знакомства с
-                разнообразием чайного мира.
-              </p>
-            </details>
-          </div>
-          <div class="py-5">
-            <details class="group">
-              <summary
-                class="flex justify-between items-center font-medium cursor-pointer list-none"
-              >
-                <span class="text-xl text-black dark:text-white delay-0">
-                  Можно ли заказать индивидуальный смешанный чай по своему
-                  рецепту?</span
-                >
-                <span
-                  class="transition group-open:rotate-180 text-black dark:text-white"
-                >
-                  <svg
-                    fill="none"
-                    height="24"
-                    shape-rendering="geometricPrecision"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </span>
-              </summary>
-              <p
-                class="text-neutral-600 dark:text-gray-400 text-base mt-3 group-open:animate-fadeIn"
-              >
-                Да, мы рады предложить возможность заказа индивидуального
-                смешанного чая по вашему рецепту. Просто свяжитесь с нами, чтобы
-                обсудить ваши предпочтения и составить уникальный чайный бленд
-                для вас.
-              </p>
-            </details>
-          </div>
-          <div class="py-5">
-            <details class="group">
-              <summary
-                class="flex justify-between items-center font-medium cursor-pointer list-none"
-              >
-                <span class="text-xl text-black dark:text-white delay-0">
-                  Устраиваете ли вы церемонии в стиле китайского чайного
-                  искусства для посетителей?</span
-                >
-                <span
-                  class="transition group-open:rotate-180 text-black dark:text-white"
-                >
-                  <svg
-                    fill="none"
-                    height="24"
-                    shape-rendering="geometricPrecision"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </span>
-              </summary>
-              <p
-                class="text-neutral-600 dark:text-gray-400 text-base mt-3 group-open:animate-fadeIn"
-              >
-                Да, мы регулярно устраиваем чайные церемонии в стиле китайского
-                чайного искусства для наших гостей. Это уникальная возможность
-                погрузиться в мир чая и насладиться его вкусом и ароматом в
-                аутентичной атмосфере.
-              </p>
-            </details>
-          </div>
-        </div>
-      </section>
-      <!-- карта места внутри страницы -->
-      <section class="body-font relative z-0">
-        <div class="absolute inset-0 bg-gray-300 dark:bg-myDarkBrownBg">
-          <iframe
-            width="100%"
-            height="100%"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            title="map"
-            scrolling="no"
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad6e4c55e6f559987eebe7d7bf1d18c9e50a98df846bfa41b5f497bec28efcb86&amp;source=constructor"
-            class="contrast-125 opacity-80 dark:opacity-40"
-          ></iframe>
-        </div>
-        <div
-          class="container px-5 py-24 xs:pb-4 xs:pt-60 mx-auto flex justify-end"
-        >
-          <div
-            class="relative w-1/3 md:w-1/2 xs:w-full bg-white dark:bg-myBrown rounded-lg p-8 flex flex-col md:ml-auto z-10 shadow-md"
-          >
-            <h2
-              class="text-gray-900 dark:text-white text-lg sm:text-base mb-1 font-medium title-font"
-            >
-              Мы здесь
-            </h2>
-            <p
-              class="leading-relaxed text-gray-600 dark:text-gray-300 sm:text-sm"
-            >
-              Россия, г. Тольятти, ул. Баныкина, д. 10A
-            </p>
-            <p
-              class="leading-relaxed mb-5 text-gray-600 dark:text-gray-300 sm:text-sm"
-            >
-              iroh_tea@ask.com
-            </p>
-            <form action="#">
-              <div class="relative mb-4">
-                <label
-                  for="email"
-                  class="leading-7 text-sm text-gray-600 dark:text-gray-300"
-                  >Ваш email для обратной связи</label
-                >
-                <input
-                  required
-                  type="email"
-                  id="email"
-                  name="email"
-                  autocomplete="off"
-                  class="w-full bg-white dark:bg-myBrown text-gray-700 dark:text-gray-300 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none py-1 px-3 leading-8"
-                />
-              </div>
-              <div class="relative mb-4">
-                <label
-                  for="message"
-                  class="leading-7 text-sm text-gray-600 dark:text-gray-300"
-                  >Вопрос/Отзыв</label
-                >
-                <textarea
-                  id="message"
-                  name="message"
-                  autocomplete="off"
-                  class="h-32 sm:h-16 w-full bg-white dark:bg-myBrown text-gray-700 dark:text-gray-300 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none py-1 px-3 resize-none leading-6"
-                ></textarea>
-              </div>
-              <input
-                type="submit"
-                class="text-white bg-myPurple border-0 py-2 px-6 focus:outline-none hover:bg-purple-700 rounded text-lg sm:text-base animate-bounce"
-              />
-              <p class="text-xs text-gray-500 dark:text-gray-400 mt-3">
-                Вы можете написать отзыв или что-либо уточнить. Всегда рады
-                ответить!
-              </p>
-            </form>
-          </div>
-        </div>
-      </section>
+            <div class="grid divide-y divide-neutral-200 max-w-6xl mx-auto mt-8 mb-28">
+                <div class="py-5">
+                    <details class="group">
+                        <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                            <span class="text-xl text-black dark:text-white delay-0">
+                                Какие самые популярные виды чая у вас?
+                            </span>
+                            <span class="transition group-open:rotate-180 text-black dark:text-white">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    viewBox="0 0 24 24" width="24">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </span>
+                        </summary>
+                        <p class="text-neutral-600 dark:text-gray-400 delay-0 mt-3 text-base group-open:animate-fadeIn">
+                            У нас самые популярные виды чая - зеленый, черный, улун и
+                            масала. Мы также предлагаем различные ароматизированные чаи и
+                            коллекции редких и уникальных сортов.
+                        </p>
+                    </details>
+                </div>
+                <div class="py-5">
+                    <details class="group">
+                        <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                            <span class="text-xl text-black dark:text-white delay-0">
+                                Как часто обновляется ассортимент чая?</span>
+                            <span class="transition group-open:rotate-180 text-black dark:text-white">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    viewBox="0 0 24 24" width="24">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </span>
+                        </summary>
+                        <p class="text-neutral-600 dark:text-gray-400 mt-3 text-base group-open:animate-fadeIn">
+                            Мы постоянно следим за новыми трендами и предлагаем своим
+                            клиентам самые свежие и качественные сорта чая. Ассортимент
+                            регулярно обновляется, так что всегда есть что-то новенькое для
+                            попробовать.
+                        </p>
+                    </details>
+                </div>
+                <div class="py-5">
+                    <details class="group">
+                        <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                            <span class="text-xl text-black dark:text-white delay-0">
+                                Какие виды чая вы рекомендуете для новичков?</span>
+                            <span class="transition group-open:rotate-180 text-black dark:text-white">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    viewBox="0 0 24 24" width="24">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </span>
+                        </summary>
+                        <p class="text-neutral-600 dark:text-gray-400 text-base mt-3 group-open:animate-fadeIn">
+                            Для новичков в мире чая мы рекомендуем попробовать классические
+                            сорта, такие как зеленый и черный чай. Они имеют мягкий вкус и
+                            приятный аромат, идеально подходят для начала знакомства с
+                            разнообразием чайного мира.
+                        </p>
+                    </details>
+                </div>
+                <div class="py-5">
+                    <details class="group">
+                        <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                            <span class="text-xl text-black dark:text-white delay-0">
+                                Можно ли заказать индивидуальный смешанный чай по своему
+                                рецепту?</span>
+                            <span class="transition group-open:rotate-180 text-black dark:text-white">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    viewBox="0 0 24 24" width="24">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </span>
+                        </summary>
+                        <p class="text-neutral-600 dark:text-gray-400 text-base mt-3 group-open:animate-fadeIn">
+                            Да, мы рады предложить возможность заказа индивидуального
+                            смешанного чая по вашему рецепту. Просто свяжитесь с нами, чтобы
+                            обсудить ваши предпочтения и составить уникальный чайный бленд
+                            для вас.
+                        </p>
+                    </details>
+                </div>
+                <div class="py-5">
+                    <details class="group">
+                        <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                            <span class="text-xl text-black dark:text-white delay-0">
+                                Устраиваете ли вы церемонии в стиле китайского чайного
+                                искусства для посетителей?</span>
+                            <span class="transition group-open:rotate-180 text-black dark:text-white">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    viewBox="0 0 24 24" width="24">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </span>
+                        </summary>
+                        <p class="text-neutral-600 dark:text-gray-400 text-base mt-3 group-open:animate-fadeIn">
+                            Да, мы регулярно устраиваем чайные церемонии в стиле китайского
+                            чайного искусства для наших гостей. Это уникальная возможность
+                            погрузиться в мир чая и насладиться его вкусом и ароматом в
+                            аутентичной атмосфере.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <!-- карта места внутри страницы -->
+        <section class="body-font relative z-0">
+            <div class="absolute inset-0 bg-gray-300 dark:bg-myDarkBrownBg">
+                <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map"
+                    scrolling="no"
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad6e4c55e6f559987eebe7d7bf1d18c9e50a98df846bfa41b5f497bec28efcb86&amp;source=constructor"
+                    class="contrast-125 opacity-80 dark:opacity-40"></iframe>
+            </div>
+            <div class="container px-5 py-24 xs:pb-4 xs:pt-60 mx-auto flex justify-end">
+                <div
+                    class="relative w-1/3 md:w-1/2 xs:w-full bg-white dark:bg-myBrown rounded-lg p-8 flex flex-col md:ml-auto z-10 shadow-md">
+                    <h2 class="text-gray-900 dark:text-white text-lg sm:text-base mb-1 font-medium title-font">
+                        Мы здесь
+                    </h2>
+                    <p class="leading-relaxed text-gray-600 dark:text-gray-300 sm:text-sm">
+                        Россия, г. Тольятти, ул. Баныкина, д. 10A
+                    </p>
+                    <p class="leading-relaxed mb-5 text-gray-600 dark:text-gray-300 sm:text-sm">
+                        iroh_tea@ask.com
+                    </p>
+                    <form action="#">
+                        <div class="relative mb-4">
+                            <label for="email" class="leading-7 text-sm text-gray-600 dark:text-gray-300">Ваш email для
+                                обратной связи</label>
+                            <input required type="email" id="email" name="email" autocomplete="off"
+                                class="w-full bg-white dark:bg-myBrown text-gray-700 dark:text-gray-300 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none py-1 px-3 leading-8" />
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="message"
+                                class="leading-7 text-sm text-gray-600 dark:text-gray-300">Вопрос/Отзыв</label>
+                            <textarea id="message" name="message" autocomplete="off"
+                                class="h-32 sm:h-16 w-full bg-white dark:bg-myBrown text-gray-700 dark:text-gray-300 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none py-1 px-3 resize-none leading-6"></textarea>
+                        </div>
+                        <input type="submit"
+                            class="text-white bg-myPurple border-0 py-2 px-6 focus:outline-none hover:bg-purple-700 rounded text-lg sm:text-base animate-bounce" />
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-3">
+                            Вы можете написать отзыв или что-либо уточнить. Всегда рады
+                            ответить!
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- подвал сайта -->
     <footer class="bg-myBrown dark:dark:bg-myDarkBrownFooter py-5 sm:px-2">
-      <div class="flex justify-between items-center px-10 sm:px-1 xs:flex-col">
+        <div class="flex justify-between items-center px-10 sm:px-1 xs:flex-col">
+            <div class="flex gap-6 sm:gap-3 text-gray-300 font-normal sm:text-sm xs:flex-col xs:text-center">
+                <a href="/index.html" class="mr-2 hover:text-gray-500">Главная</a>
+                <a href="/layouts/irohAbout.html" class="mr-2 hover:text-gray-500">О нас</a>
+                <a href="/layouts/irohMenu.html" class="mr-2 hover:text-gray-500">Продукция</a>
+                <a href="/layouts/irohNews.html" class="mr-2 hover:text-gray-500">Новости и акции</a>
+            </div>
+            <div class="flex space-x-5 py-3">
+                <a href="https://vk.com/hikkan_chh">
+                    <img class="sm:w-8" src="/imgs/vk_logo.png"
+                        alt="Ошибка загрузки изображения. Попробуйте обносить страницу." />
+                </a>
+                <a href="https://t.me/tereploo">
+                    <img class="sm:w-8" src="/imgs/tg_logo.png"
+                        alt="Ошибка загрузки изображения. Попробуйте обносить страницу." />
+                </a>
+            </div>
+        </div>
         <div
-          class="flex gap-6 sm:gap-3 text-gray-300 font-normal sm:text-sm xs:flex-col xs:text-center"
-        >
-          <a href="/index.html" class="mr-2 hover:text-gray-500">Главная</a>
-          <a href="/layouts/irohAbout.html" class="mr-2 hover:text-gray-500"
-            >О нас</a
-          >
-          <a href="/layouts/irohMenu.html" class="mr-2 hover:text-gray-500"
-            >Продукция</a
-          >
-          <a href="/layouts/irohNews.html" class="mr-2 hover:text-gray-500"
-            >Новости и акции</a
-          >
+            class="flex pt-5 m-auto text-gray-300 text-sm md:text-xs sm:text-[10px] xs:text-[8px] flex-col text-center items-center border-t max-w-screen-xl">
+            <p>
+                © Copyright 2024. All Rights Reserved. Made by Abramova Victoria. Все
+                права защищены. Разработчик Абрамова Виктория
+            </p>
         </div>
-        <div class="flex space-x-5 py-3">
-          <a href="https://vk.com/hikkan_chh">
-            <img
-              class="sm:w-8"
-              src="/imgs/vk_logo.png"
-              alt="Ошибка загрузки изображения. Попробуйте обносить страницу."
-            />
-          </a>
-          <a href="https://t.me/tereploo">
-            <img
-              class="sm:w-8"
-              src="/imgs/tg_logo.png"
-              alt="Ошибка загрузки изображения. Попробуйте обносить страницу."
-            />
-          </a>
-        </div>
-      </div>
-      <div
-        class="flex pt-5 m-auto text-gray-300 text-sm md:text-xs sm:text-[10px] xs:text-[8px] flex-col text-center items-center border-t max-w-screen-xl"
-      >
-        <p>
-          © Copyright 2024. All Rights Reserved. Made by Abramova Victoria. Все
-          права защищены. Разработчик Абрамова Виктория
-        </p>
-      </div>
     </footer>
     <script src="/js/main.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  </body>
+</body>
+
 </html>
