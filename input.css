@@ -2,27 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-/* for error in the form */
+/*применение ко всем элементам анимации смены цвета (для плавной смены темы)*/
+* {
+  @apply transition-colors duration-300 ease-in-out;
+}
+
+/* стиль для окна с ошибочным вводос почты/сообщения в форме обратной связи */
 .errorInput {
   border-color: red;
 }
 
-* {
-  @apply transition-colors duration-300 ease-in-out
-}
-
+/*скрытие скроллбара*/
 @layer utilities {
-  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* для Chrome, Safari, Opera и пр.*/
   .no-scrollbar::-webkit-scrollbar {
-      display: none;
+    display: none;
   }
- /* Hide scrollbar for IE, Edge and Firefox */
+  /* для IE, Edge и Firefox */
   .no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
-}
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
-html, body { 
-  @apply no-scrollbar 
+/*применение стиля без скроллабара для всех страниц*/
+html,
+body {
+  @apply no-scrollbar;
 }

@@ -956,10 +956,6 @@ video {
   overflow: hidden;
 }
 
-.overflow-y-scroll {
-  overflow-y: scroll;
-}
-
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1019,7 +1015,7 @@ video {
   background-color: rgb(89 84 81 / var(--tw-bg-opacity));
 }
 
-.bg-myDarkred {
+.bg-myDarkRed {
   --tw-bg-opacity: 1;
   background-color: rgb(39 20 39 / var(--tw-bg-opacity));
 }
@@ -1055,11 +1051,11 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-mainFirstpage {
+.bg-mainFirstPage {
   background-image: url('/imgs/main_1st_page.jpg');
 }
 
-.bg-mainSecondpage {
+.bg-mainSecondPage {
   background-image: url('/imgs/main_2nd_page.jpg');
 }
 
@@ -1071,11 +1067,11 @@ video {
   background-image: url('/imgs/news_sale.png');
 }
 
-.bg-myTeaceremony {
+.bg-myTeaCeremony {
   background-image: url('/imgs/news_tea.png');
 }
 
-.bg-reviewSecondpage {
+.bg-reviewSecondPage {
   background-image: url('/imgs/review_2nd_page.jpg');
 }
 
@@ -1095,7 +1091,7 @@ video {
   --tw-gradient-to: #09191F var(--tw-gradient-to-position);
 }
 
-.to-myDarkred {
+.to-myDarkRed {
   --tw-gradient-to: #271427 var(--tw-gradient-to-position);
 }
 
@@ -1361,7 +1357,7 @@ video {
   color: rgb(89 84 81 / var(--tw-text-opacity));
 }
 
-.text-myDarkred {
+.text-myDarkRed {
   --tw-text-opacity: 1;
   color: rgb(39 20 39 / var(--tw-text-opacity));
 }
@@ -1434,35 +1430,11 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
+/* для Chrome, Safari, Opera и пр.*/
 
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+/* для IE, Edge и Firefox */
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-
-.no-scrollbar {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
-/* for error in the form */
-
-.errorInput {
-  border-color: red;
-}
+/*применение ко всем элементам анимации смены цвета (для плавной смены темы)*/
 
 * {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
@@ -1470,22 +1442,25 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-html::-webkit-scrollbar, body::-webkit-scrollbar {
+/* стиль для окна с ошибочным вводос почты/сообщения в форме обратной связи */
+
+.errorInput {
+  border-color: red;
+}
+
+/*скрытие скроллбара*/
+
+/*применение стиля без скроллабара для всех страниц*/
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
   display: none;
 }
 
-html, body {
+html,
+body {
   -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-html::-webkit-scrollbar, body::-webkit-scrollbar {
-  display: none;
-}
-
-html, body {
-  -ms-overflow-style: none;
-  /* IE and Edge */
+  /* IE и Edge */
   scrollbar-width: none;
   /* Firefox */
 }
@@ -1564,7 +1539,7 @@ html, body {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.hover\:text-myDarkgreen:hover {
+.hover\:text-myDarkGreen:hover {
   --tw-text-opacity: 1;
   color: rgb(90 188 164 / var(--tw-text-opacity));
 }
@@ -1696,62 +1671,57 @@ html, body {
   background-color: rgb(89 84 81 / var(--tw-bg-opacity));
 }
 
-.dark\:bg-myDarkbgbrown:is(.dark *) {
+.dark\:bg-myDarkBrownBg:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(36 34 32 / var(--tw-bg-opacity));
 }
 
-.dark\:bg-myDarkbggreen:is(.dark *) {
+.dark\:bg-myDarkGreenBg:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(12 32 40 / var(--tw-bg-opacity));
 }
 
-.dark\:bg-myDarkfootergreen:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(6 18 23 / var(--tw-bg-opacity));
-}
-
-.dark\:bg-myPurpledark:is(.dark *) {
+.dark\:bg-myPurpleDark:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(74 33 119 / var(--tw-bg-opacity));
 }
 
-.dark\:dark\:bg-myDarkbgfooterbrown:is(.dark *):is(.dark *) {
+.dark\:dark\:bg-myDarkBrownFooter:is(.dark *):is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(29 27 26 / var(--tw-bg-opacity));
 }
 
-.dark\:bg-mainFirstdark:is(.dark *) {
+.dark\:bg-mainFirstDark:is(.dark *) {
   background-image: url('/imgs/main_1st_page_dark.jpg');
 }
 
-.dark\:bg-mainSeconddark:is(.dark *) {
+.dark\:bg-mainSecondDark:is(.dark *) {
   background-image: url('/imgs/main_2nd_page_dark.jpg');
 }
 
-.dark\:bg-myMatchadark:is(.dark *) {
+.dark\:bg-myMatchaDark:is(.dark *) {
   background-image: url('/imgs/news_matcha_dark.png');
 }
 
-.dark\:bg-myReviewdark:is(.dark *) {
+.dark\:bg-myReviewDark:is(.dark *) {
   background-image: url('/imgs/review_2nd_page_dark.jpg');
 }
 
-.dark\:bg-mySaledark:is(.dark *) {
+.dark\:bg-mySaleDark:is(.dark *) {
   background-image: url('/imgs/news_sale_dark.png');
 }
 
-.dark\:bg-myTeaceremonydark:is(.dark *) {
+.dark\:bg-myTeaCeremonyDark:is(.dark *) {
   background-image: url('/imgs/news_tea_dark.png');
 }
 
-.dark\:from-myDarkredfrom:is(.dark *) {
+.dark\:from-myDarkRedFrom:is(.dark *) {
   --tw-gradient-from: #090409 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(9 4 9 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.dark\:to-myDarkred:is(.dark *) {
+.dark\:to-myDarkRed:is(.dark *) {
   --tw-gradient-to: #271427 var(--tw-gradient-to-position);
 }
 
@@ -1770,7 +1740,7 @@ html, body {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.dark\:text-myPurpledark:is(.dark *) {
+.dark\:text-myPurpleDark:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(74 33 119 / var(--tw-text-opacity));
 }
@@ -1798,7 +1768,7 @@ html, body {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
-.dark\:hover\:text-myDarkgreen:hover:is(.dark *) {
+.dark\:hover\:text-myDarkGreen:hover:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(90 188 164 / var(--tw-text-opacity));
 }

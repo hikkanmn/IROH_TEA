@@ -1,15 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./**/*.html'], /*все html файлы будут взаимодействовать с фреймворком tailwindCSS*/
-  darkMode: 'class',
+  content: [
+    "./**/*.html",
+  ] /*все html файлы будут взаимодействовать с фреймворком tailwindCSS*/,
+  darkMode: "class" /*подключение темной темы*/,
   theme: {
-    screens:{
-      lg: {max: '1280px'},
-      md: {max: '1024px'},
-      sm: {max: '768px'},
-      xs: {max: '480px'},
+    /*инициализация ключевых точек для адаптивной верстки*/
+    screens: {
+      lg: { max: "1280px" },
+      md: { max: "1024px" },
+      sm: { max: "768px" },
+      xs: { max: "480px" },
     },
     extend: {
+      /*создание собственной анимации появления*/
       keyframes: {
         fadeIn: {
           "0%": { opacity: 0 },
@@ -19,54 +23,55 @@ module.exports = {
       animation: {
         fadeIn: "fadeIn 0.2s ease-in-out forwards",
       },
+      /*создание собственных цветов для работы по подготовленному дизайн-шаблону*/
       colors: {
-        transBlack: '#00000570', /*свой полупрозрачный цвет для шапки*/
-        myGreen: '#173C4C', /*свой темно-зеленый*/
-        menuColor1: '#13333F', /*свой первый цвет для градиента мобильного меню*/
-        menuColor2: '#09191F', /*свой второй цвет для градиента мобильного меню*/
-        myPurple: '#9149E1', /*свой оттенок фиолетового*/
-        myBrown: '#595451', /*свой оттенок коричневого*/
-        myDarkred: '#271427', /*свой оттенок темно-красного*/
-        myDarkgreen: '#5ABCA4', /*свой цвет для акцентного заголовка темной темы*/
-        myDarkbggreen: '#0C2028', /*свой цвет для фона темной темы*/
-        myDarkfootergreen: '#061217',
-        myDarkbgbrown: '#242220',
-        myDarkbgfooterbrown: '#1D1B1A',
-        myDarkredfrom: '#090409',
-        myPurpledark: '#4A2177'
-
+        transBlack: "#00000570" /*свой полупрозрачный цвет для шапки*/,
+        myGreen: "#173C4C" /*свой темно-зеленый*/,
+        menuColor1: "#13333F" /*свой первый цвет для градиента мобильного меню*/,
+        menuColor2: "#09191F" /*свой второй цвет для градиента мобильного меню*/,
+        myPurple: "#9149E1" /*свой оттенок фиолетового*/,
+        myBrown: "#595451" /*свой оттенок коричневого*/,
+        myDarkRed: "#271427" /*свой оттенок темно-красного*/,
+        /*свои цвета для темной темы*/  
+        myDarkGreen: "#5ABCA4",
+        myDarkGreenBg: "#0C2028",
+        myDarkGreenFooter: "#061217",
+        myDarkBrownBg: "#242220",
+        myDarkBrownFooter: "#1D1B1A",
+        myDarkRedFrom: "#090409",
+        myPurpleDark: "#4A2177",
       },
+      /*создание собственных фоновых изображений*/
       backgroundImage: {
-        'mainFirstpage': "url('/imgs/main_1st_page.jpg')",
-        'mainSecondpage': "url('/imgs/main_2nd_page.jpg')",
-        'reviewSecondpage': "url('/imgs/review_2nd_page.jpg')",
-        'logoWhite': "url('/imgs/logo_white.svg')",
-        'mySale': "url('/imgs/news_sale.png')",
-        'myMatcha': "url('/imgs/news_matcha.png')",
-        'myTeaceremony': "url('/imgs/news_tea.png')",
-        'myReviewdark': "url('/imgs/review_2nd_page_dark.jpg')",
-        'mainFirstdark': "url('/imgs/main_1st_page_dark.jpg')",
-        'mainSeconddark': "url('/imgs/main_2nd_page_dark.jpg')",
-        'mySaledark': "url('/imgs/news_sale_dark.png')",
-        'myMatchadark': "url('/imgs/news_matcha_dark.png')",
-        'myTeaceremonydark': "url('/imgs/news_tea_dark.png')"
+        mainFirstPage:
+          "url('/imgs/main_1st_page.jpg')" /*первое фото главной страницы*/,
+        mainSecondPage:
+          "url('/imgs/main_2nd_page.jpg')" /*перовое фото страницы о нас*/,
+        reviewSecondPage:
+          "url('/imgs/review_2nd_page.jpg')" /*фото для заднего плана первых отзывов*/,
+        logoWhite: 
+          "url('/imgs/logo_white.svg')" /*белое лого для шапки*/,
+        mySale: 
+          "url('/imgs/news_sale.png')" /*фото для акции скидки*/,
+        myMatcha: 
+          "url('/imgs/news_matcha.png')" /*фото для акции с матчей*/,
+        myTeaCeremony:
+          "url('/imgs/news_tea.png')" /*фото для новости про чайные церемонии*/,
+        myReviewDark:
+          "url('/imgs/review_2nd_page_dark.jpg')" /*фото темной темы первых отзывов*/,
+        mainFirstDark:
+          "url('/imgs/main_1st_page_dark.jpg')" /*фото темной темы для главной страницы*/,
+        mainSecondDark:
+          "url('/imgs/main_2nd_page_dark.jpg')" /*фото темной темы для второй страницы*/,
+        mySaleDark:
+          "url('/imgs/news_sale_dark.png')" /*теная тема акции скидки*/,
+        myMatchaDark:
+          "url('/imgs/news_matcha_dark.png')" /*темная тема акции с матчей*/,
+        myTeaCeremonyDark:
+          "url('/imgs/news_tea_dark.png')" /*темная тема для чаных церемоний*/,
       },
     },
   },
-  plugins: [
-    function ({ addUtilities }) {
-      const newUtilities = {
-        /* Hide scrollbar for Chrome, Safari and Opera */
-        ".no-scrollbar::-webkit-scrollbar": {
-          display: "none",
-        },
-        /* Hide scrollbar for IE, Edge and Firefox */
-        ".no-scrollbar": {
-          "-ms-overflow-style": "none" /* IE and Edge */,
-          "scrollbar-width": "none" /* Firefox */,
-        },
-      };
-      addUtilities(newUtilities)
-    },
-  ]
-}
+  /*плагин для сортировки классов и кода*/
+  plugins: ["prettier-plugin-tailwindcss"],
+};
