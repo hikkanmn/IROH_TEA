@@ -28,5 +28,5 @@
 /*применение стиля без скроллабара для всех страниц*/
 html,
 body {
-  @apply no-scrollbar overflow-y-scroll;
+  @apply no-scrollbar;
 }
