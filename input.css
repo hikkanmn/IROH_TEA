@@ -27,6 +27,7 @@
 
 /*применение стиля без скроллабара для всех страниц*/
 html,
-body {
+body,
+main {
   @apply no-scrollbar;
 }

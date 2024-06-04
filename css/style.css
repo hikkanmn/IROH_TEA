@@ -1463,12 +1463,14 @@ video {
 /*применение стиля без скроллабара для всех страниц*/
 
 html::-webkit-scrollbar,
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+main::-webkit-scrollbar {
   display: none;
 }
 
 html,
-body {
+body,
+main {
   -ms-overflow-style: none;
   /* IE и Edge */
   scrollbar-width: none;
